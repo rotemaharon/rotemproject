@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קפה טוב לבוקר טוב</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Heebo, serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .form-container {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 400px;
+            text-align: right;
+        }
+
+        h1 {
+            color: #020253;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        p {
+            color: #020253;
+            font-size: 20px;
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2C2C2C;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-bottom: 4px solid #020253;
+            background-color: #E5EEFF;
+        }
+
+        button {
+            width: 40%;
+            padding: 10px;
+            background-color: #020253;
+            color: white;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3d4444;
+        }
+
+
+        .image-container {
+            width: 50%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                flex-direction: column;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 900;
+
+            }
+
+            p {
+                font-size: 1.1rem;
+                text-align: center;
+
+            }
+
+            .form-container,
+            .image-container {
+                width: 100%;
+            }
+
+            .image-container {
+                height: 300px;
+                order: -1;
+            }
+
+            .form {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            button {
+                margin-top: 15px;
+                padding: 5px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form class="form">
+                <h1>קפה טוב לבוקר טוב</h1>
+                <p>לקבלת קופון לקפה חינם ומפנק שיפתח לכם את היום בחיוך, יש למלא את הפרטים</p>
+                <label>שם מלא</label>
+                <input type="text" required>
+                <label>דוא״ל</label>
+                <input type="email" required>
+                <button type="submit">שליחה</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="images/Coffee.png" alt="cup of Coffee">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    background: transparent linear-gradient(180deg, #281EFF 0%, #2DFF8C 100%) 0% 0% no-repeat padding-box;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 160px;
+    color: white;
+    text-shadow: 2px 2px 2px #00000087;
+    font-family: "Satisfy", serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+    font-family: "Varela Round", serif;
+    text-align: center;
+    font-weight: 100;
+}
+
+p {
+    font-weight: 100;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-family: "Varela Round", serif;
+    text-align: center;
+    max-width: 600px;
+}
+
+.forme {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 700px;
+    gap: 10px;
+}
+
+.forme>div {
+    flex: 1;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.forme label {
+    color: white;
+    font-family: "Varela Round", serif;
+    margin-bottom: 5px;
+}
+
+.forme input {
+    background: #F6F6F624 0% 0% no-repeat padding-box;
+    color: #fff;
+    border: 2px solid #FFFFFF;
+    height: 35px;
+    width: 100%;
+}
+
+.forme button {
+    margin-top: 31px;
+    height: 35px;
+    background: white;
+    border: none;
+    color: #1C1C1C;
+    width: 150px;
+    padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    .forme {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .forme>div {
+        width: 100%;
+    }
+
+    .forme input {
+        width: 100%;
+    }
+
+    .forme button {
+        margin-top: 10px;
+        width: 100%;
+        color: #2823FD;
+    }
+}
