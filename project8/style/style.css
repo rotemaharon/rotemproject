@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Share Tech", serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.form-container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+h1 {
+    color: #8221a0;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+p {
+    color: #8221a0;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #8221a0;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 4px solid #8221a0;
+    background-color: #ebe5eb;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5e1873;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    background-color: #8221a0;
+    color: white;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5e1873;
+}
+
+.image-container {
+    width: 60%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .image-container {
+        width: 100%;
+    }
+
+    .image-container {
+        height: 300px;
+        order: -1;
+    }
+
+    .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) and (orientation: portrait) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 100%;
+        order: 2;
+        padding: 2rem;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 40vh;
+        order: 1;
+    }
+
+    .form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    input {
+        padding: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        width: 60%;
+        padding: 1rem;
+        font-size: 1.3rem;
+        display: block;
+        margin: 2rem auto 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1024px) and (orientation: landscape) {
+    .form-container {
+        width: 50%;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .form {
+        padding: 1rem;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .form-container {
+        width: 45%;
+    }
+
+    .image-container {
+        width: 55%;
+    }
+
+    .form {
+        max-width: 500px;
+    }
+}

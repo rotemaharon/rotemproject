@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he-IL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav-menu">
+            <div class="menu-container">
+                <input type="checkbox" id="hamburger-toggle" class="hamburger-toggle">
+                <label for="hamburger-toggle" class="hamburger-label">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <ul class="menu-items">
+                    <li><a href="#Home">ראשי</a></li>
+                    <li><a href="#About">אודות</a></li>
+                    <li><a href="#Gallery">גלריה</a></li>
+                    <li><a href="#Contact">צור קשר</a></li>
+                </ul>
+            </div>
+            <div class="logo-container">
+                <h3 class="logo-text">Rotem Aharon</h3>
+                <img src="images/A.jpg" alt="Profile" class="logo-image">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="hero-section">
+            <div class="hero-content">
+                <h1>תיק עבודות אישי</h1>
+                <h2>כאן אציג בפניכם את הפרוייקט המסכם שלי בHTML CSS <br>מקווה שתהנו!</h2>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <div class="skills-icons">
+                <img src="images/ht.png" alt="html" class="skill-image">
+                <img src="images/css.png" alt="css" class="skill-image">
+                <img src="images/img-JS.png" alt="js" class="skill-image">
+            </div>
+        </section>
+
+        <section id="About" class="about-section">
+            <img src="images/rotem.png" alt="Profile Image" class="about-image">
+            <h2>קצת עליי</h2>
+            <div class="about-text">
+                <p>
+                    בעלת חברת השמה לטבחים בת 35 מירושלים <br>
+                    פיתחתי מיומנויות ייחודיות בחיבור בין אנשים והבנת צרכי השוק. <br>כיום אני לומדת פיתוח תוכנה,<br>
+                    משלבת את הניסיון העסקי
+                    והיצירתי שלי עם התשוקה הוותיקה לעולם הטכנולוגיה.<br>
+                    בזמני הפנוי אני אוהבת לטייל כיאה לסוכנת נסיעות לשעבר, <br>נהנית מנופים מרהיבים ומעניקה בית חם לכלבתי
+                    האהובה.<br> החיבור לטבע ולבעלי
+                    חיים, יחד עם האהבה
+                    שלי לפתרון אתגרים מורכבים, יוצרים שילוב ייחודי שמניע אותי בדרכי החדשה בעולם התכנות.
+                </p>
+            </div>
+            <a href="rotemaharoncv.zip" download target="_blank" class="cv-button">
+                להורדת קורות חיים
+            </a>
+
+        </section>
+
+        <section id="Gallery" class="gallery-section">
+            <h2>עבודות נבחרות</h2>
+            <h4>כאן אציג את דפי הנחיתה שלי</h4>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project3.jpg" alt="Project 3" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Here & Now</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project3/projectpage/project3page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project2.jpg" alt="Project 2" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>קפה טוב לבוקר טוב</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project2/projectpage/project2page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project1.jpg" alt="Project 1" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>לגלות את העולם</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project1/projectpage/project1page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project6.jpg" alt="Project 6" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>ייעוץ חינם</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project6/projectpage/project6page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project5.jpg" alt="Project 5" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>LET US</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project5/projectpage/project5page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project4.jpg" alt="Project 4" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>תן לנו להוביל אותך קדימה</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project4/projectpage/project4page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project9.jpg" alt="Project 4" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Full Stack & AI Development</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project9/projectpage/project9page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project8.jpg" alt="Project 4" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>Login System</h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project8/projectpage/project8page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image-container">
+                        <img src="images/project7.jpg" alt="Project 4" class="gallery-image">
+                    </div>
+                    <div class="project-info">
+                        <h3>לחשוב מחוץ לקופסה </h3>
+                        <p>מציגה בפניכם את הפרוייקט שלי </p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><img src="images/ht.png" alt="HTML"></a>
+                            <a href="#" class="social-icon"><img src="images/css.png" alt="CSS"></a>
+                        </div>
+                        <a href="./projects/project7/projectpage/project7page.html" class="project-link">לעמוד הפרויקט
+                            ←</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="contact-section">
+            <div class="footer-dark">
+                <div class="contact-footer">
+                    <h3>צור קשר</h3>
+                    <p>מוזמנים להשאיר פרטים</p>
+                    <form>
+                        <div class="form-field">
+                            <label>שם מלא</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-field">
+                            <label>דוא״ל</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-field">
+                            <label>טלפון</label>
+                            <input type="tel" required>
+                        </div>
+                        <div class="form-field">
+                            <label>תוכן ההודעה</label>
+                            <textarea required></textarea>
+                        </div>
+                        <button type="submit">שליחה</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-bar">
+                <div class="social-icons">
+                    <div class="social-item">
+                        <img src="images/Icon awesome-facebook-f.svg" alt="facebook">
+                        <span>ROTEM_AHARON#</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="images/Icon awesome-linkedin-in.svg" alt="linkedin">
+                        <span>Rotem aharon</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="images/Icon simple-whatsapp-1.svg" alt="phone">
+                        <span>0546681118</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="images/Icon simple-whatsapp.svg" alt="whatsapp">
+                        <span>0546681118</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="images/Icon simple-email.svg" alt="email">
+                        <span>aharonrotem@gmail.com</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="images/Icon material-location-on.svg" alt="location">
+                        <span>האלון 20</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>כל הזכויות שמורות</span>
+                <span>רותם אהרון</span>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
