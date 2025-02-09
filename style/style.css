@@ -428,6 +428,17 @@ span {
 
 
 @media (max-width: 768px) {
+
+    .menu-items a:active~.hamburger-toggle,
+    .menu-items a:target~.hamburger-toggle {
+        display: none;
+    }
+
+    .menu-items a:active~.menu-items,
+    .menu-items a:target~.menu-items {
+        display: none;
+    }
+
     .main-header {
         height: auto;
     }
@@ -499,6 +510,17 @@ span {
 }
 
 @media (max-width: 576px) {
+
+    .menu-items a:active~.hamburger-toggle,
+    .menu-items a:target~.hamburger-toggle {
+        display: none;
+    }
+
+    .menu-items a:active~.menu-items,
+    .menu-items a:target~.menu-items {
+        display: none;
+    }
+
     .hero-section {
         height: 300px;
     }
