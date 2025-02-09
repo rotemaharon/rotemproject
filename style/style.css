@@ -28,8 +28,6 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
-
-
 .main-header {
     height: 100px;
     background-color: #fff;
@@ -322,7 +320,6 @@ h4 {
 .footer-dark {
     padding: 40px 20px;
     background: #000 url('../images/h.png') no-repeat left;
-
 }
 
 .contact-footer {
@@ -425,20 +422,7 @@ span {
     justify-content: space-between;
 }
 
-
-
 @media (max-width: 768px) {
-
-    .menu-items a:active~.hamburger-toggle,
-    .menu-items a:target~.hamburger-toggle {
-        display: none;
-    }
-
-    .menu-items a:active~.menu-items,
-    .menu-items a:target~.menu-items {
-        display: none;
-    }
-
     .main-header {
         height: auto;
     }
@@ -469,8 +453,17 @@ span {
         margin: 10px 0;
     }
 
+    .menu-items a {
+        display: block;
+        width: 100%;
+    }
+
     .hamburger-toggle:checked~.menu-items {
         display: flex;
+    }
+
+    .menu-container:has(.menu-items a:active) .hamburger-toggle {
+        opacity: 0;
     }
 
     .hamburger-toggle:checked~.hamburger-label .bar:nth-child(1) {
@@ -510,17 +503,6 @@ span {
 }
 
 @media (max-width: 576px) {
-
-    .menu-items a:active~.hamburger-toggle,
-    .menu-items a:target~.hamburger-toggle {
-        display: none;
-    }
-
-    .menu-items a:active~.menu-items,
-    .menu-items a:target~.menu-items {
-        display: none;
-    }
-
     .hero-section {
         height: 300px;
     }
@@ -567,6 +549,5 @@ span {
 
     .social-bar .social-icons {
         gap: 30px;
-
     }
 }

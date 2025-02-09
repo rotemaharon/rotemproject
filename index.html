@@ -273,6 +273,14 @@
             </div>
         </section>
     </main>
+    <script>
+        document.querySelectorAll(".menu-items a").forEach(link => {
+            link.addEventListener("click", () => {
+                document.getElementById("hamburger-toggle").checked = false;
+            });
+        });
+    </script>
+
 </body>
 
 </html>
