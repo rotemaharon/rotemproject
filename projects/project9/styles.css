@@ -166,6 +166,55 @@ body::before {
     box-shadow: 0 5px 15px rgba(98, 0, 255, 0.3);
 }
 
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(45, 45, 45, 0.9);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--purple-glow);
+    box-shadow: 0 0 10px rgba(98, 0, 255, 0.3);
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
 @keyframes backgroundPulse {
     0% {
         opacity: 0.5;
@@ -209,6 +258,10 @@ body::before {
     }
 
     .content {
+        padding: 20px;
+    }
+
+    .contact-form {
         padding: 20px;
     }
 }
