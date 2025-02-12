@@ -88,6 +88,12 @@ img {
     background: #c0d00d;
 }
 
+@media (max-width: 576px) {
+    img {
+        height: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .box h1 {
         position: relative;
@@ -113,12 +119,6 @@ img {
     .forme button {
         width: 100%;
         max-width: 300px;
-    }
-}
-
-@media (max-width: 576px) {
-    img {
-        height: 400px;
     }
 }
 
